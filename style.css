@@ -1,6 +1,6 @@
 .topflexbox {
   display: grid;
-  background: #5C81A1;
+  background: #5c81a1;
   height: 120px;
   justify-content: center;
   align-content: center;
@@ -11,51 +11,49 @@ h1 {
   color: white;
 }
 
-.footer {
-  font-size: 14px;
-  background-color: #dcdcdc;
-  border-top: black;
-  padding: 10px;
+h2 {
+  font-size: 30px;
+  color: purple;
 }
 
+
 .exercise-grid {
-  display: grid; 
-/*   grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  /*   grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 
-/*   column-gap: 20px; */
-  padding-left:90px;
+  /*   column-gap: 20px; */
+  padding-left: 90px;
   row-gap: 5px;
- background: #E0FFFF;
+  background: #e0ffff;
   align-items: center;
-  padding-bottom: 150px;
-/* justify-content: space-evenly; */
-/*    width: auto; */
-/*   border: 10px solid green; */
-/* } */
+  padding-bottom: 20px;
+  /* justify-content: space-evenly; */
+  /*    width: auto; */
+  /*   border: 10px solid green; */
+  /* } */
 }
 
 .exercise-tile {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-    justify-content: center;
-  width: 320px;
-  height: max;
+  justify-content: center;
+  width: 250px;
+  height: 400px;
   margin: 20px;
   background: white;
-    border-radius: 10%;
+  border-radius: 10%;
   border-style: solid;
-    border-width: 1px;
-  border-color: #D3D3D3;
-   box-shadow: 8px 8px #DCDCDC;
+  border-width: 1px;
+  border-color: #d3d3d3;
+  box-shadow: 8px 8px #dcdcdc;
 }
 
 /* .time {
   text-align: center;
 } */
-
 
 .exercise-box img {
   display: block;
@@ -63,26 +61,24 @@ h1 {
   width: 35%;
   height: 35%;
   border-radius: 5%;
-/*   border: 2px solid red; */
+  /*   border: 2px solid red; */
 }
 
 .exercise-name {
   font-size: 30px;
   text-align: center;
-/*   padding-left: 15px; */
-/*   text-underline-offset: 15px; */
+  /*   padding-left: 15px; */
+  /*   text-underline-offset: 15px; */
   font-weight: bold;
-    color: #483D8B;
+  color: #483d8b;
 }
-
-
 
 .time {
   text-align: center;
-    font-size: 25px;
-     color: #808080;
-  
-/*   display: block;
+  font-size: 25px;
+  color: #808080;
+
+  /*   display: block;
   position: absolute;
   z-index: 100;
    font-weight: bold;
@@ -103,7 +99,6 @@ color: blue;
   border: 2px solid red;
 } */
 
-
 .sneak-peek {
   text-align: center;
   margin: 10px;
@@ -111,8 +106,8 @@ color: blue;
 
 .hover-box-one {
   display: none;
-/*   width: 100%; */
-/*   border: 5px solid blue; */
+  /*   width: 100%; */
+  /*   border: 5px solid blue; */
 }
 
 a:hover + .hover-box-one,
@@ -120,8 +115,8 @@ a:hover + .hover-box-one,
   display: block;
   position: absolute;
   z-index: 100;
-/*     top: 5px; */
-/*   left: 10%; */
+  /*     top: 5px; */
+  /*   left: 10%; */
   background: white;
 }
 
@@ -134,14 +129,62 @@ a:hover + .hover-box-two,
   display: block;
   position: absolute;
   z-index: 100;
-/*   top: 1px; */
-/*    bottom: 1px; */
-/*   left: 10%; */
+  /*   top: 1px; */
+  /*    bottom: 1px; */
+  /*   left: 10%; */
   background: white;
 }
 
-  a {
-        text-decoration: none;
-        /* Removes underline from links */
-        color: #483D8B;
-      }
+a {
+  text-decoration: none;
+  /* Removes underline from links */
+  color: #483d8b;
+}
+
+.exercise-dance-name {
+  font-size: 40px;
+  text-align: center;
+    align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #483d8b;
+/*     display: inline-block; */
+}
+
+.exercise-dance-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  font-size: 30px;
+  text-align: center;
+  /*   padding-left: 15px; */
+  /*   text-underline-offset: 15px; */
+  font-weight: bold;
+  color: #483d8b;
+}
+
+
+/* .exercise-dance {
+  display: flex;
+  flex-wrap: wrap;
+  color: purple;
+  align-items: center;
+  justify-content: center;
+  width: 250px; 
+} */
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer {
+  font-size: 14px;
+  background-color: #dcdcdc;
+  border-top: black;
+  padding: 10px;
+}
