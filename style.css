@@ -16,7 +16,6 @@ h2 {
   color: purple;
 }
 
-
 .exercise-grid {
   display: grid;
   /*   grid-template-columns: repeat(4, 1fr); */
@@ -144,11 +143,11 @@ a {
 .exercise-dance-name {
   font-size: 40px;
   text-align: center;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   font-weight: bold;
   color: #483d8b;
-/*     display: inline-block; */
+  /*     display: inline-block; */
 }
 
 .exercise-dance-container {
@@ -163,7 +162,6 @@ a {
   color: #483d8b;
 }
 
-
 /* .exercise-dance {
   display: flex;
   flex-wrap: wrap;
@@ -174,12 +172,12 @@ a {
 } */
 
 ul.no-bullets {
-    list-style-type: none; /* Remove bullets */
+  list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
 }
 
 .footer {
