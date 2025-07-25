@@ -135,7 +135,7 @@ a:hover + .hover-box-two,
   position: absolute;
   z-index: 100;
 /*    bottom: 10px; */
-     bottom: 20px;
+/*      bottom: 20px; */
 /*   left: 10%; */
   background: white;
 }
