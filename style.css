@@ -134,8 +134,8 @@ a:hover + .hover-box-two,
   display: block;
   position: absolute;
   z-index: 100;
-/*    bottom: 10px; */
-/*      bottom: 20px; */
+/*   top: 1px; */
+/*    bottom: 1px; */
 /*   left: 10%; */
   background: white;
 }
