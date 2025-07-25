@@ -76,27 +76,8 @@ h2 {
   text-align: center;
   font-size: 25px;
   color: #808080;
-
-  /*   display: block;
-  position: absolute;
-  z-index: 100;
-   font-weight: bold;
-color: blue;
-  background: white;
-  border-radius: 50%;
-  padding: 10px;
-  left: 30px;
-  border: 2px solid brown; */
 }
 
-/* .exercise-box img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-  border-radius: 5%;
-  border: 2px solid red;
-} */
 
 .sneak-peek {
   text-align: center;
@@ -145,8 +126,10 @@ a {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   font-weight: bold;
   color: #483d8b;
+  background-color: #A5D5E4;
   /*     display: inline-block; */
 }
 
@@ -161,15 +144,6 @@ a {
   font-weight: bold;
   color: #483d8b;
 }
-
-/* .exercise-dance {
-  display: flex;
-  flex-wrap: wrap;
-  color: purple;
-  align-items: center;
-  justify-content: center;
-  width: 250px; 
-} */
 
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
