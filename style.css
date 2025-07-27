@@ -1,77 +1,83 @@
 .topflexbox {
   display: grid;
-  background: #5c81a1;
+  /*   background: #5c81a1; */
+  background: black;
   height: 120px;
   justify-content: center;
   align-content: center;
+  padding: 10px;
 }
 
 h1 {
   font-size: 70px;
-  color: black;
+  color: white;
 }
 
 h2 {
   font-size: 40px;
   color: #5c81a1;
-} 
+}
 
 h3 {
-    font-size: 30px;
-/*   color: #5c81a1; */
+  font-size: 30px;
+  /*   color: #5c81a1; */
 }
 
 body {
   background-image: url("https://i.imgur.com/oUbEF9P.jpeg");
   /* background-image: url('https://i.imgur.com/eoeWGFf.jpeg' */
- background-size: cover; /* Adjusts the image to cover the entire element */
-background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-
 
 .exercise-grid {
   display: grid;
-  /*   grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-/*   background: #DCEDF5; */
-  /*   column-gap: 20px; */
+  grid-gap: 20px;
+  /*   padding: 15px; */
+  /*   gap: 1rem; */
   padding-top: 10px;
   padding-left: 60px;
   row-gap: 5px;
-/*   background: #e0ffff; */
   align-items: center;
   padding-bottom: 80px;
-  /* justify-content: space-evenly; */
-  /*    width: auto; */
-  /*   border: 10px solid green; */
-  /* } */
+  /*   justify-content: space-evenly; */
+  justify-content: center;
+  /*     border: 10px solid green; */
 }
 
+/* .exercise-grid {
+      display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 15px;
+} */
+
 .limerick {
-    display: grid;
+  display: grid;
   align-content: center;
-    text-align: center;
+  text-align: center;
   font-size: 25px;
   color: #808080;
   padding-bottom: 20px;
 }
 
-
 .exercise-tile {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+
   width: 250px;
   height: 400px;
   margin: 20px;
   background: white;
-/*   border-radius: 10%; */
+  /*   border-radius: 10%; */
   border-style: solid;
   border-width: 1px;
   border-color: #d3d3d3;
-/*   box-shadow: 8px 8px #dcdcdc; */
+  /*   box-shadow: 8px 8px #dcdcdc; */
+  /*       border: 2px solid red; */
 }
 
 /* .time {
@@ -81,21 +87,22 @@ background-repeat: no-repeat; /* Prevents the image from repeating */
 .exercise-box img {
   display: block;
   margin: auto;
-/* width: 35%; */
-/*   height: 35%; */
-/*   height: auto; */
-/*   width: max; */
-/*   object-fit: cover; */
-/*   height: 100%; */
-/*     width:100%; */
-/*     height: max; */
+
+  /* width: 35%; */
+  /*   height: 35%; */
+  /*   height: auto; */
+  /*   width: max; */
+  /*   object-fit: cover; */
+  /*   height: 100%; */
+  /*     width:100%; */
+  /*     height: max; */
   border-radius: 5%;
-  /*   border: 2px solid red; */
+  /*     border: 2px solid red; */
 }
 
 .image {
   object-fit: cover;
-/*   height: auto; */
+  /*   height: auto; */
 }
 
 .exercise-name {
@@ -112,7 +119,6 @@ background-repeat: no-repeat; /* Prevents the image from repeating */
   font-size: 25px;
   color: #808080;
 }
-
 
 .sneak-peek {
   text-align: center;
@@ -153,8 +159,8 @@ a:hover + .hover-box-two,
 a {
   text-decoration: none;
   /* Removes underline from links */
-/*   color: #483d8b; */
-    color: #333333;
+  /*   color: #483d8b; */
+  color: #333333;
   font-size: 30px;
 }
 
@@ -165,11 +171,11 @@ a {
   justify-content: center;
   padding: 20px;
   font-weight: bold;
-/*   color: #483d8b; */
-    color: white;
-/*     color: white; */
-/*   background-color: #A5D5E4; */
-    background-color: #5c81a1;
+  /*   color: #483d8b; */
+  color: white;
+  /*     color: white; */
+  /*   background-color: #A5D5E4; */
+  background-color: #5e5e5e;
   /*     display: inline-block; */
 }
 
@@ -181,7 +187,7 @@ a {
   text-align: center;
   /*   padding-left: 15px; */
   /*   text-underline-offset: 15px; */
-/*   font-weight: bold; */
+  /*   font-weight: bold; */
   color: #483d8b;
   padding-bottom: 20px;
 }
