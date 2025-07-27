@@ -7,39 +7,56 @@
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 70px;
   color: black;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   color: #5c81a1;
 } 
 
-/* body {
-background-image: url('https://i.imgur.com/eoeWGFf.jpeg'); */
-/* background-size: cover; /* Adjusts the image to cover the entire element */
-/* background-repeat: no-repeat; Prevents the image from repeating
-} */
+h3 {
+    font-size: 30px;
+/*   color: #5c81a1; */
+}
+
+body {
+  background-image: url("https://i.imgur.com/oUbEF9P.jpeg");
+  /* background-image: url('https://i.imgur.com/eoeWGFf.jpeg' */
+ background-size: cover; /* Adjusts the image to cover the entire element */
+background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
 
 .exercise-grid {
   display: grid;
   /*   grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
-  background: #DCEDF5;
+/*   background: #DCEDF5; */
   /*   column-gap: 20px; */
   padding-top: 10px;
   padding-left: 60px;
   row-gap: 5px;
 /*   background: #e0ffff; */
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   /* justify-content: space-evenly; */
   /*    width: auto; */
   /*   border: 10px solid green; */
   /* } */
 }
+
+.limerick {
+    display: grid;
+  align-content: center;
+    text-align: center;
+  font-size: 25px;
+  color: #808080;
+  padding-bottom: 20px;
+}
+
 
 .exercise-tile {
   display: flex;
@@ -50,11 +67,11 @@ background-image: url('https://i.imgur.com/eoeWGFf.jpeg'); */
   height: 400px;
   margin: 20px;
   background: white;
-  border-radius: 10%;
+/*   border-radius: 10%; */
   border-style: solid;
   border-width: 1px;
   border-color: #d3d3d3;
-  box-shadow: 8px 8px #dcdcdc;
+/*   box-shadow: 8px 8px #dcdcdc; */
 }
 
 /* .time {
@@ -137,11 +154,12 @@ a {
   text-decoration: none;
   /* Removes underline from links */
 /*   color: #483d8b; */
-    color: #757070;
+    color: #333333;
+  font-size: 30px;
 }
 
 .exercise-dance-name {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -165,6 +183,7 @@ a {
   /*   text-underline-offset: 15px; */
 /*   font-weight: bold; */
   color: #483d8b;
+  padding-bottom: 20px;
 }
 
 ul.no-bullets {
@@ -177,8 +196,9 @@ ul.no-bullets {
 }
 
 .footer {
-  font-size: 14px;
-  background-color: #dcdcdc;
+  font-size: 20px;
+  background-color: #b3b3b3;
   border-top: black;
   padding: 10px;
+  color: black;
 }
