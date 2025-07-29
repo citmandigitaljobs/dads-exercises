@@ -425,13 +425,13 @@ grid-auto-columns: auto;
     margin: 25px;
     height: 370px;
     padding-bottom: 10px;
-    border: 10px solid purple;
+/*     border: 10px solid purple; */
   }
 
   .exercise-box img {
     display: block;
     margin: auto;
-    border: 2px solid orange;
+/*     border: 2px solid orange; */
   }
 
   .exercise-name {
@@ -519,10 +519,10 @@ grid-auto-columns: auto;
   .exercise-box {
     display: block;
     background-color: white;
-        padding: 10px;
+        padding: 1px;
     margin: 10px;
     margin-bottom: 25px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 /*     border: 10px solid purple; */
   }
 
