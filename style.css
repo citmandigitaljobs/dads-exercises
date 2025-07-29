@@ -422,10 +422,10 @@ grid-auto-columns: auto;
   .exercise-box {
     display: block;
     background-color: white;
-    margin: 20px;
+    margin: 25px;
     height: 370px;
-    padding-bottom: 15px;
-/*     border: 10px solid purple; */
+    padding-bottom: 10px;
+    border: 10px solid purple;
   }
 
   .exercise-box img {
@@ -470,9 +470,9 @@ grid-auto-columns: auto;
   .exercise-box {
     display: block;
     background-color: white;
-    margin: 20px;
+    margin: 25px;
     height: 370px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 /*     border: 10px solid purple; */
   }
 
@@ -511,6 +511,7 @@ grid-auto-columns: auto;
     /*     padding: 20px; */
     margin: auto;
     row-gap: 10px;
+   
     justify-content: space-between;
 /*     border: 5px solid yellow; */
   }
@@ -519,8 +520,9 @@ grid-auto-columns: auto;
     display: block;
     background-color: white;
         padding: 10px;
+    margin: 10px;
     margin-bottom: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 /*     border: 10px solid purple; */
   }
 
