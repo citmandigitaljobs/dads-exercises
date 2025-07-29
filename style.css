@@ -230,7 +230,7 @@ body {
   .exercise-box {
     display: block;
     background-color: white;
-        padding: 10px;
+           padding-bottom: 15px;
     margin-bottom: 25px;
 /*     border: 10px solid purple; */
   }
@@ -278,13 +278,14 @@ body {
     display: block;
     background-color: white;
     margin: 20px;
-       padding: 10px;
+       padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
   .exercise-box img {
     display: block;
     margin: auto;
+    padding-bottom: 15px;
 /*     border: 2px solid orange; */
   }
 
@@ -325,7 +326,7 @@ body {
     background-color: white;
     margin: 20px;
     height: 370px;
-   padding: 10px;
+    padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
@@ -374,7 +375,7 @@ grid-auto-columns: auto;
     background-color: white;
     margin: 20px;
     height: 370px;
-   padding: 10px;
+    padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
@@ -423,7 +424,7 @@ grid-auto-columns: auto;
     background-color: white;
     margin: 20px;
     height: 370px;
-   padding: 10px;
+    padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
@@ -471,7 +472,7 @@ grid-auto-columns: auto;
     background-color: white;
     margin: 20px;
     height: 370px;
-   padding: 10px;
+    padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
@@ -519,7 +520,7 @@ grid-auto-columns: auto;
     background-color: white;
         padding: 10px;
     margin-bottom: 25px;
-   padding: 10px;
+    padding-bottom: 15px;
 /*     border: 10px solid purple; */
   }
 
