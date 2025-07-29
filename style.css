@@ -324,10 +324,10 @@ body {
   .exercise-box {
     display: block;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     height: 370px;
-    padding-bottom: 15px;
-/*     border: 10px solid purple; */
+    padding: 15px;
+    border: 10px solid purple;
   }
 
   .exercise-box img {
@@ -373,9 +373,9 @@ grid-auto-columns: auto;
   .exercise-box {
     display: block;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     height: 370px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 /*     border: 10px solid purple; */
   }
 
@@ -431,7 +431,7 @@ grid-auto-columns: auto;
   .exercise-box img {
     display: block;
     margin: auto;
-/*     border: 2px solid orange; */
+    border: 2px solid orange;
   }
 
   .exercise-name {
