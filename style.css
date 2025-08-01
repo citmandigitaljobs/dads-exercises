@@ -82,6 +82,7 @@
     align-content: center;
     text-align: center;
     padding: 10px;
+/*         border: 5px solid yellow; */
   }
   .limerick {
     display: grid;
@@ -181,7 +182,7 @@
 .topflexbox {
     display: grid;
     background: black;
-    color: black;
+    color: white;
     font-size: 35px;
     height: 150px;
     justify-content: center;
@@ -374,7 +375,7 @@ grid-auto-columns: auto;
     display: block;
     background-color: white;
     margin: 10px;
-    height: 370px;
+    height: 300px;
     padding-bottom: 5px;
 /*     border: 10px solid purple; */
   }
@@ -423,7 +424,7 @@ grid-auto-columns: auto;
     display: block;
     background-color: white;
     margin: 25px;
-    height: 370px;
+    height: 350px;
     padding-bottom: 10px;
 /*     border: 10px solid purple; */
   }
@@ -503,7 +504,7 @@ grid-auto-columns: auto;
 
 /* MEDIA QUERIES EXTRA LARGE DEVICE  */
 /* EXERCISE GRID: AUTO COLUMNS */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
  .exercise-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
