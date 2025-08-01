@@ -181,7 +181,7 @@
 .topflexbox {
     display: grid;
     background: black;
-    color: white;
+    color: black;
     font-size: 35px;
     height: 150px;
     justify-content: center;
@@ -519,6 +519,8 @@ grid-auto-columns: auto;
   .exercise-box {
     display: block;
     background-color: white;
+    width: 250px;
+    height: 350px;
         padding: 1px;
     margin: 10px;
     margin-bottom: 25px;
@@ -529,7 +531,7 @@ grid-auto-columns: auto;
   .exercise-box img {
     display: block;
     margin: auto;
-/*     border: 2px solid orange; */
+    border: 2px solid orange;
   }
 
   .exercise-name {
@@ -799,7 +801,7 @@ grid-auto-columns: auto;
 
 /* MEDIA QUERIES EXTRA LARGE DEVICE */
 /* EXERCISE DANCE: 3 COLUMNS */
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1026px) and (max-width: 1200px){
    .exercise-dance {
     font-size: 20px;
     padding: 20px;
@@ -845,6 +847,54 @@ grid-auto-columns: auto;
 }
 /* MEDIA QUERIES EXTRA LARGE DEVICE */
  
+
+/* MEDIA QUERIES EXTRA EXTRA LARGEST DEVICE */
+/* EXERCISE DANCE: 3 COLUMNS */
+@media screen and (min-width: 1201px){
+   .exercise-dance {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .exercise-dance-name {
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #5e5e5e;
+  }
+
+  .exercise-dance-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+    color: #483d8b;
+    padding-bottom: 20px;
+    row-gap: 10px;
+/*     border: 2px solid red; */
+  }
+  
+ .no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    display: inline-block;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    /* Removes underline from links */
+    color: #333333;
+    font-size: 25px;
+  }
+}
+/* MEDIA QUERIES EXTRA EXTRA LARGEST DEVICE */
  
 /* _________________ FOOTER _________________ */
 
