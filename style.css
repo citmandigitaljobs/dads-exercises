@@ -508,6 +508,7 @@ grid-auto-columns: auto;
  .exercise-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+   
 /* grid-auto-columns: auto; */
     /*     padding: 20px; */
     margin: auto;
@@ -549,9 +550,31 @@ grid-auto-columns: auto;
   }
 
   .sneak-peek {
-    display: none;
+   align-items: center;
+        justify-content: center;
+/*         border: 5px solid blue; */
+    text-align: center;
+  margin: 10px;
+/*     display: none; */
   }
+
+.hover-box-one {
+  display: none;
+  /*   width: 100%; */
+  /*   border: 5px solid blue; */
 }
+
+a:hover + .hover-box-one,
+.hover-box:hover {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  /*     top: 5px; */
+  /*   left: 10%; */
+  background: white;
+}
+}
+
 /* MOBILE RESPONSIVENESS EXTRA LARGE DEVICE FINISH */
 /* _________________ DANCE _________________ */
 
