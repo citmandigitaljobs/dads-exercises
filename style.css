@@ -245,6 +245,7 @@ width: 100%;
 @media screen and (min-width: 761px) and (max-width: 990px) {
  .grid-content {
   display: grid;
+
        grid-template-columns: 1fr;
   height: 950px;
   padding: 10px;
@@ -279,9 +280,10 @@ width: 100%;
 .arrows {
     display: flex;
    flex-direction: row;
+  
   justify-content: space-around;
   background-color: white;
-       border: 2px solid magenta;
+/*        border: 2px solid magenta; */
 }
 
 .image {
@@ -292,7 +294,7 @@ width: 100%;
   height: 820px;
    border-radius: 8px;
   object-fit: contain;
-  border: 5px solid pink;
+/*   border: 5px solid pink; */
 }
 
 /* Next & previous buttons */
@@ -300,16 +302,18 @@ width: 100%;
 .next-image {
   cursor: pointer;
     position: relative;
+  
   width: auto;
   margin-top: -22px;
   padding: 16px;
-    color: brown;
+    color: #A65E2E;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-         border: 5px solid green;
+  border-radius: 25px;
+         border: 5px solid tan;
 }
   }
 /* MEDIA QUERIES TABLET LANDSCAPE FINISH
@@ -356,6 +360,8 @@ width: 100%;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+    border-radius: 25px;
+         border: 5px solid tan;
          border: 5px solid green;
 }
   }
