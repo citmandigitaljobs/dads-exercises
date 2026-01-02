@@ -1,11 +1,18 @@
+// function myFunctionOne() {
+//   var x = document.getElementById("clickPreviewOne");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+
+// FOR TOUCH DEVICE START
 function myFunctionOne() {
-  var x = document.getElementById("clickPreviewOne");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+ document.getElementById("clickPreviewOne").innerHTML = "Preview";
 }
+// FOR TOUCH DEVICE END
+
 
 function myFunctionTwo() {
   var x = document.getElementById("clickPreviewTwo");
