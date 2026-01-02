@@ -8,8 +8,11 @@
 // }
 
 // FOR TOUCH DEVICE START
+
+document.getElementById("clickPreviewOne").addEventListener("touchstart", myFunctionOne);
+
 function myFunctionOne() {
- document.getElementById("clickPreviewOne");
+ // document.getElementById("clickPreviewOne").addEventListener("touchstart",myFunctionOne);
   if (x.style.display === "none") {
  x.style.display = "block";
 } else {
