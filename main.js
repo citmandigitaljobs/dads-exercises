@@ -9,7 +9,12 @@
 
 // FOR TOUCH DEVICE START
 function myFunctionOne() {
- document.getElementById("clickPreviewOne").innerHTML = "Preview";
+ document.getElementById("clickPreviewOne");
+  if (x.style.display === "none") {
+ x.style.display = "block";
+} else {
+ x.style.display = "none";
+ }
 }
 // FOR TOUCH DEVICE END
 
