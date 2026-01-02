@@ -221,7 +221,7 @@ body {
     margin-bottom: 25px;
     margin: auto;
     row-gap: 10px;
-    /*             border: 5px solid blue; */
+    /*                 border: 5px solid blue; */
   }
 
   .physio-exercise-name {
@@ -287,7 +287,74 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT FINISH */
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE START */
@@ -303,7 +370,7 @@ body {
     margin-bottom: 25px;
     margin: auto;
     row-gap: 10px;
-/*             border: 5px solid blue; */
+    /*             border: 5px solid blue; */
   }
 
   .physio-exercise-name {
@@ -318,8 +385,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-/*       width: 50%; */
-/*                     border: 5px solid red; */
+    /*       width: 50%; */
+    /*                     border: 5px solid red; */
   }
 }
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
@@ -334,7 +401,7 @@ body {
     margin: auto;
     row-gap: 10px;
     /*     justify-content: space-between; */
-    /*     border: 5px solid yellow; */
+    /*         border: 5px solid yellow; */
   }
 
   .exercise-box {
@@ -342,7 +409,7 @@ body {
     background-color: white;
     margin: 20px;
     padding-bottom: 15px;
-    /*     border: 10px solid purple; */
+    /*         border: 10px solid purple; */
   }
 
   .exercise-box img {
@@ -368,7 +435,74 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT START */
@@ -385,7 +519,7 @@ body {
     margin: auto;
     row-gap: 10px;
     /*     justify-content: space-between; */
-/*             border: 5px solid yellow; */
+/*     border: 5px solid yellow; */
   }
 
   .physio-exercise-name {
@@ -400,8 +534,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    /*                 border: 5px solid red; */
-      width: 90%;
+/*     border: 5px solid red; */
+    width: 90%;
   }
 }
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
@@ -415,7 +549,7 @@ body {
     margin: auto;
     row-gap: 10px;
     justify-content: space-between;
-    /*     border: 5px solid yellow; */
+    /*         border: 5px solid yellow; */
   }
 
   .exercise-box {
@@ -449,7 +583,75 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
 
 /* MEDIA QUERIES TABLET LANDSCAPE */
@@ -504,9 +706,9 @@ body {
     display: block;
     background-color: white;
     margin: 10px;
-    height: 300px;
+    height: 350px;
     padding-bottom: 5px;
-    /*     border: 10px solid purple; */
+    /*         border: 10px solid purple; */
   }
 
   .exercise-box img {
@@ -531,7 +733,75 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS TABLET LANDSCAPE FINISH */
 
 /* MEDIA QUERIES MEDIUM DEVICE */
@@ -586,9 +856,9 @@ body {
     display: block;
     background-color: white;
     margin: 25px;
-    height: 350px;
+    height: 410px;
     padding-bottom: 10px;
-    /*     border: 10px solid purple; */
+    /*         border: 10px solid purple; */
   }
 
   .exercise-box img {
@@ -613,7 +883,75 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS MEDIUM DEVICE FINISH */
 
 /* MEDIA QUERIES LARGE DEVICE  */
@@ -629,7 +967,7 @@ body {
     margin: auto;
     row-gap: 10px;
     /*     justify-content: space-between; */
-    /*         border: 5px solid yellow; */
+/*     border: 5px solid yellow; */
   }
 
   .physio-exercise-name {
@@ -658,7 +996,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
     row-gap: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /*     border: 5px solid yellow; */
   }
 
@@ -666,9 +1004,9 @@ body {
     display: block;
     background-color: white;
     margin: 25px;
-    height: 370px;
+    height: 420px;
     padding-bottom: 10px;
-    /*     border: 10px solid purple; */
+    /*         border: 10px solid purple; */
   }
 
   .exercise-box img {
@@ -693,7 +1031,79 @@ body {
   .sneak-peek {
     display: none;
   }
+
+  .click-to-preview {
+    display: none;
+  }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  #clickPreviewOne {
+    display: none;
+  }
+
+  #clickPreviewTwo {
+    display: none;
+  }
+
+  #clickPreviewThree {
+    display: none;
+  }
+
+  #clickPreviewFour {
+    display: none;
+  }
+
+  #clickPreviewFive {
+    display: none;
+  }
+
+  #clickPreviewSix {
+    display: none;
+  }
+
+  #clickPreviewSeven {
+    display: none;
+  }
+
+  #clickPreviewEight {
+    display: none;
+  }
+
+  .click-to-preview {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    color: #808080;
+    /*     border: 5px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+  }
+
+  .mobile-device-image img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+  }
+
+  button {
+    color: #808080;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+  }
 }
+
+/*  PREVIEW FOR MOBILE DEVICE END */
+
 /* MOBILE RESPONSIVENESS LARGE DEVICE FINISH */
 
 /* MEDIA QUERIES EXTRA LARGE DEVICE  */
@@ -800,9 +1210,14 @@ body {
     /*   left: 10%; */
     background: white;
   }
+
+  .click-to-preview {
+    display: none;
+  }
 }
 
 /* MOBILE RESPONSIVENESS EXTRA LARGE DEVICE FINISH */
+
 /* _________________ DANCE _________________ */
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
