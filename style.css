@@ -510,6 +510,21 @@ button {
   cursor: pointer;
 }
 
+/* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT END */
 
 /* --------------------------------------------------- */
@@ -773,6 +788,20 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
@@ -1042,6 +1071,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
@@ -1325,6 +1369,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -1564,6 +1623,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
@@ -1846,6 +1920,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 /* MOBILE RESPONSIVENESS TABLET LANDSCAPE FINISH */
 
@@ -2115,6 +2204,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 /* MOBILE RESPONSIVENESS MEDIUM DEVICE FINISH */
@@ -2368,6 +2472,21 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* The Close Button */
+.close-nine {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-nine:hover,
+.close-nine:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 /* MOBILE RESPONSIVENESS LARGE DEVICE FINISH */
 
