@@ -27,7 +27,7 @@
     display: grid;
     background: black;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     height: 150px;
     justify-content: center;
     align-content: center;
@@ -39,8 +39,7 @@
     display: none;
   }
 }
-/* MEDIA QUERIES MOBILE LANDSCAPE FINISH
- */
+/* MEDIA QUERIES MOBILE LANDSCAPE FINISH */
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT */
 /* TOPFLEXBOX */
@@ -82,7 +81,7 @@
     align-content: center;
     text-align: center;
     padding: 10px;
-    /*         border: 5px solid yellow; */
+/*     border: 5px solid yellow; */
   }
   .limerick {
     display: grid;
@@ -203,6 +202,8 @@
 /* MEDIA QUERIES EXTRA EXTRA LARGE DEVICE FINISH
  */
 
+/* ----------------------------------- */
+
 body {
   background-image: url("https://i.imgur.com/oUbEF9P.jpeg");
   /* background-image: url('https://i.imgur.com/eoeWGFf.jpeg' */
@@ -221,7 +222,7 @@ body {
     margin-bottom: 25px;
     margin: auto;
     row-gap: 10px;
-    /*                 border: 5px solid blue; */
+/*                 border: 5px solid blue; */
   }
 
   .physio-exercise-name {
@@ -248,27 +249,36 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 10px;
-    margin: 25px;
+    margin: 15px;
     row-gap: 5px;
     /*     padding-bottom: 50px; */
-    justify-content: space-between;
-    /*     border: 5px solid yellow; */
+    /*     justify-content: space-between; */
+    /*         border: 5px solid yellow; */
   }
 }
 
 @media screen and (max-width: 320px) {
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+  }
+
   .exercise-box {
-    display: block;
+    /*     display: block; */
+    display: grid;
     background-color: white;
-    padding-bottom: 15px;
+    width: 100%;
+    /*     padding-bottom: 15px; */
+    padding: 10px;
     margin-bottom: 25px;
-    /*     border: 10px solid purple; */
+    /*         border: 10px solid pink; */
   }
 
   .exercise-box img {
     display: block;
     margin: auto;
-    /*     border: 2px solid orange; */
+    /*         border: 2px solid orange; */
   }
 
   .exercise-name {
@@ -287,62 +297,33 @@ body {
   .sneak-peek {
     display: none;
   }
+}
 
-  /*  PREVIEW FOR MOBILE DEVICE START */
-
-  #clickPreviewOne {
+/* FIRST ATTEMPT PREVIEW FOR MOBILE DEVICE START */
+/*  PREVIEW FOR MOBILE DEVICE START */
+/*   .clickPreviewOne {
     display: none;
-  }
+  } */
 
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
+/*   .click-to-preview {
     align-items: center;
     justify-content: center;
     background-color: white;
     font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
+    border: 5px solid red;
     text-align: center;
-    padding-top: 10px;
     margin: 10px;
-  }
+  } */
 
-  .mobile-device-image img {
+/*   .mobile-device-image img {
     object-fit: contain;
     width: 100%;
     border-style: solid;
     border-width: 1px;
     border-color: #cecece;
-  }
+  } */
 
-  button {
+/*   button {
     color: #808080;
     background-color: white;
     padding: 15px 32px;
@@ -350,12 +331,188 @@ body {
     text-decoration: none;
     font-size: 20px;
     border: none;
-  }
+  } */
+
+/*   button:active {
+    color: white;
+  } */
+
+/*  FIRST ATTEMPT PREVIEW FOR MOBILE DEVICE END */
+
+/*  PREVIEW FOR MOBILE DEVICE START */
+
+button {
+  color: #808080;
+  background-color: #f9fbfa;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #888;
+  border-radius: 50px;
+  /*            border: 5px solid green; */
 }
 
-/*  PREVIEW FOR MOBILE DEVICE END */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default 
+  /* Stay in place */
+  position: relative;
+  background-color: white;
+  z-index: 1; /* Sit on top */
+  width: max;
+  height: auto;
+  /* Enable scroll if needed */
+  /*   overflow: auto;  */
+  border: 3px solid;
+  border-color: #5c81a1;
+  /*                border: 5px solid purple; */
+}
 
-/* MOBILE RESPONSIVENESS MOBILE PORTRAIT FINISH */
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  background-color: white;
+  /* Could be more or less, depending on screen size */
+  margin: 5px;
+  /* Could be more or less, depending on screen size */
+  width: max;
+  /*   border: 2px dotted; */
+  /*   border-color: #5c81a1; */
+}
+
+.modal img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* The Close Button */
+.close-one {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-one:hover,
+.close-one:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-two {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-two:hover,
+.close-two:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-three {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-three:hover,
+.close-three:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-four {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-four:hover,
+.close-four:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-five {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-five:hover,
+.close-five:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-six {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-six:hover,
+.close-six:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-seven {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-seven:hover,
+.close-seven:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close-eight {
+  color: red;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close-eight:hover,
+.close-eight:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVENESS MOBILE PORTRAIT END */
+
+/* --------------------------------------------------- */
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE START */
 
@@ -370,11 +527,11 @@ body {
     margin-bottom: 25px;
     margin: auto;
     row-gap: 10px;
-    /*             border: 5px solid blue; */
+/*                 border: 5px solid blue; */
   }
 
   .physio-exercise-name {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
     color: #5c81a1;
@@ -395,21 +552,30 @@ body {
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .exercise-grid {
     display: grid;
-    /*     grid-template-columns: repeat(2, 1fr); */
-    grid-auto-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
     padding: 10px;
-    margin: auto;
-    row-gap: 10px;
+    margin: 15px;
+    row-gap: 5px;
+    /*     padding-bottom: 50px; */
     /*     justify-content: space-between; */
-    /*         border: 5px solid yellow; */
+/*             border: 5px solid yellow; */
+  }
+
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
   }
 
   .exercise-box {
-    display: block;
+    /*     display: block; */
+    display: grid;
     background-color: white;
-    margin: 20px;
-    padding-bottom: 15px;
-    /*         border: 10px solid purple; */
+    width: 100%;
+    /*     padding-bottom: 15px; */
+    /*     padding: 10px; */
+    margin-bottom: 25px;
+    /*                 border: 10px solid pink; */
   }
 
   .exercise-box img {
@@ -438,80 +604,187 @@ body {
 
   /*  PREVIEW FOR MOBILE DEVICE START */
 
-  #clickPreviewOne {
-    display: none;
-  }
-
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    margin: 10px;
-  }
-
-  .mobile-device-image img {
-    object-fit: contain;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cecece;
-  }
-
   button {
     color: #808080;
-    background-color: white;
+    /*     background-color: #f9fbfa; */
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    /*            border: 5px solid green; */
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+  /* Stay in place */
+    position: relative;
+    background-color: white;
+    z-index: 1; /* Sit on top */
+    width: max;
+    height: auto;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    border: 3px solid;
+    border-color: #5c81a1;
+    /*                border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*   border: 2px dotted; */
+    /*   border-color: #5c81a1; */
+  }
+
+  .modal img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
-
-/*  PREVIEW FOR MOBILE DEVICE END */
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT START */
 
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS TABLET PORTRAIT START */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 520px) {
   .physio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/*     grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: auto;
     background-color: white;
     padding-bottom: 15px;
@@ -519,7 +792,7 @@ body {
     margin: auto;
     row-gap: 10px;
     /*     justify-content: space-between; */
-/*     border: 5px solid yellow; */
+    /*                     border: 5px solid green; */
   }
 
   .physio-exercise-name {
@@ -534,31 +807,316 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-/*     border: 5px solid red; */
+    /*                 border: 5px solid red; */
     width: 90%;
   }
 }
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
 
 /* EXERCISE GRID: 2 COLUMNS */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 520px) {
   .exercise-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /*     padding: 20px; */
     margin: auto;
-    row-gap: 10px;
+    /*     row-gap: 10px; */
     justify-content: space-between;
-    /*         border: 5px solid yellow; */
+/*     border: 5px solid yellow; */
+  }
+
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
   }
 
   .exercise-box {
-    display: block;
+    /*     display: block; */
+    display: grid;
     background-color: white;
-    margin: 10px;
-    height: 370px;
-    padding: 15px;
-    /*     border: 10px solid purple; */
+    width: 100%;
+    /*     padding-bottom: 15px; */
+    /*     padding: 10px; */
+    margin-bottom: 25px;
+    position: relative;
+    /*                 border: 10px solid pink; */
+  }
+
+  .exercise-box img {
+    display: block;
+    margin: auto;
+    /*         border: 2px solid orange; */
+  }
+
+  .exercise-name {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #5c81a1;
+  }
+
+  .time {
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+  }
+
+  .sneak-peek {
+    display: none;
+  }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+    background-color: white;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
+  }
+
+  .modal img {
+    display: block;
+    width: 90%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid purple; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
+
+/* MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
+
+/* -------------------------- */
+
+/* PHYSIO EXERCISES MOBILE RESPONSIVENESS TABLET PORTRAIT START */
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  .physio {
+    display: grid;
+/*     grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    margin: auto;
+    row-gap: 10px;
+    /*     justify-content: space-between; */
+/*                         border: 5px solid green; */
+  }
+
+  .physio-exercise-name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #5c81a1;
+  }
+
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    /*                 border: 5px solid red; */
+    width: 90%;
+  }
+}
+/* PHYSIO EXERCISES MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
+
+/* EXERCISE GRID: 2 COLUMNS */
+/* ------------------- */
+/* TWO BREAKPOINT SIZES IN THIS SECTION: 521 TO 600 THEN 601 TO 768 */
+/* ------------------- */
+@media screen and (min-width: 521px) and (max-width: 600px) {
+  .exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*     padding: 20px; */
+    margin: auto;
+    /*     row-gap: 10px; */
+    justify-content: space-between;
+    /*     border: 5px solid red; */
+  }
+
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+/*     border: 5px solid pink; */
+  }
+
+  .exercise-box {
+    /*     display: block; */
+    display: grid;
+    background-color: white;
+    width: 100%;
+    /*     padding-bottom: 15px; */
+    /*     padding: 10px; */
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid;
+    border-color: #e8e8e8;
   }
 
   .exercise-box img {
@@ -586,73 +1144,433 @@ body {
 
   /*  PREVIEW FOR MOBILE DEVICE START */
 
-  #clickPreviewOne {
-    display: none;
-  }
-
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    margin: 10px;
-  }
-
-  .mobile-device-image img {
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cecece;
-  }
-
   button {
     color: #808080;
-    background-color: white;
+    background-color: #f9fbfa;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+     
+    background-color: white;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    display: grid;
+    /*      display: flex; */
+    /*      flex-direction: column; */
+    grid-template-rows: 1fr;
+    /*   justify-content: space-evenly; */
+    /*  align-content: flex-start; */
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
+  }
+
+  .modal img {
+    display: block;
+    width: 80%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid green; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    /*     float: right; */
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
-/*  PREVIEW FOR MOBILE DEVICE END */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*     padding: 20px; */
+    margin: auto;
+    /*     row-gap: 10px; */
+    justify-content: space-between;
+/*     border: 5px solid red; */
+  }
+
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    /*         border: 5px solid pink; */
+  }
+
+  .exercise-box {
+    /*     display: block; */
+    display: grid;
+    background-color: white;
+    width: 100%;
+    /*     padding-bottom: 15px; */
+    /*     padding: 10px; */
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid;
+    border-color: #e8e8e8;
+  }
+
+  .exercise-box img {
+    display: block;
+    margin: auto;
+    /*     border: 2px solid orange; */
+  }
+
+  .exercise-name {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #5c81a1;
+  }
+
+  .time {
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+  }
+
+  .sneak-peek {
+    display: none;
+  }
+
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+     
+    background-color: white;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    display: grid;
+    /*      display: flex; */
+    /*      flex-direction: column; */
+    grid-template-rows: 1fr;
+    /*   justify-content: space-evenly; */
+    /*  align-content: flex-start; */
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
+  }
+
+  .modal img {
+    display: block;
+    width: 70%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid green; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    /*     float: right; */
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* MOBILE RESPONSIVENESS MOBILE LANDSCAPE FINISH */
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT FINISH */
+
+/* ---------------------------- */
 
 /* MEDIA QUERIES TABLET LANDSCAPE */
 
@@ -668,11 +1586,11 @@ body {
     margin: auto;
     row-gap: 10px;
     /*     justify-content: space-between; */
-    /*         border: 5px solid yellow; */
+    /*             border: 5px solid yellow; */
   }
 
   .physio-exercise-name {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
     color: #5c81a1;
@@ -699,26 +1617,37 @@ body {
     margin: auto;
     row-gap: 10px;
     justify-content: space-between;
-    /*     border: 5px solid yellow; */
+/*     border: 5px solid green; */
+  }
+
+  .exercise-tile {
+    display: grid;
+    place-items: center;
+    padding: 5px;
   }
 
   .exercise-box {
-    display: block;
+    /*         display: block; */
+    display: grid;
     background-color: white;
-    margin: 10px;
-    height: 350px;
-    padding-bottom: 5px;
-    /*         border: 10px solid purple; */
+    width: 85%;
+    height: 400px;
+    /*     padding-bottom: 15px; */
+    padding: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    /*                 border: 10px solid pink; */
   }
 
   .exercise-box img {
     display: block;
     margin: auto;
-    /*     border: 2px solid orange; */
+    height: 150px;
+/*         border: 2px solid orange; */
   }
 
   .exercise-name {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
     color: #5c81a1;
@@ -736,78 +1665,463 @@ body {
 
   /*  PREVIEW FOR MOBILE DEVICE START */
 
-  #clickPreviewOne {
-    display: none;
-  }
-
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    margin: 10px;
-  }
-
-  .mobile-device-image img {
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cecece;
-  }
-
   button {
     color: #808080;
-    background-color: white;
+    background-color: #f9fbfa;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+     
+    background-color: white;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 230px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    display: grid;
+    /*      display: flex; */
+    /*      flex-direction: column; */
+    grid-template-rows: 1fr;
+    /*   justify-content: space-evenly; */
+    /*  align-content: flex-start; */
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
+  }
+
+  .modal img {
+    display: block;
+    width: 75%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid green; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
-
-/*  PREVIEW FOR MOBILE DEVICE END */
-
 /* MOBILE RESPONSIVENESS TABLET LANDSCAPE FINISH */
 
 /* MEDIA QUERIES MEDIUM DEVICE */
 
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS MEDIUM DEVICE LANDSCAPE START */
 @media screen and (min-width: 991px) and (max-width: 1024px) {
+  .physio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    margin: auto;
+    row-gap: 10px;
+    /*     justify-content: space-between; */
+/*     border: 5px solid orange; */
+  }
+
+  .physio-exercise-name {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #5c81a1;
+  }
+
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    /*                 border: 5px solid red; */
+    width: 90%;
+  }
+}
+/* PHYSIO EXERCISES MOBILE RESPONSIVENESS MEDIUM DEVICE LANDSCAPE FINISH */
+
+/* EXERCISE GRID: AUTO COLUMNS */
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+  .exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*     grid-auto-columns: auto; */
+    /*         padding: 20px; */
+    margin: auto;
+    row-gap: 10px;
+    justify-content: space-between;
+/*     border: 5px solid yellow; */
+  }
+
+  .exercise-box {
+    /*         display: block; */
+    display: grid;
+    background-color: white;
+    width: 85%;
+    height: 390px;
+    /*     padding-bottom: 15px; */
+    padding: 10px;
+    margin-bottom: 25px;
+    position: relative;
+/*     border: 10px solid pink; */
+  }
+
+  .exercise-box img {
+    display: block;
+    margin: auto;
+    /*     border: 2px solid orange; */
+  }
+
+  .exercise-name {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #5c81a1;
+  }
+
+  .time {
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+  }
+
+  .sneak-peek {
+    display: none;
+  }
+  /*  PREVIEW FOR MOBILE DEVICE START */
+
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    /*                border: 5px solid green; */
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+     
+    background-color: white;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    display: grid;
+    /*      display: flex; */
+    /*      flex-direction: column; */
+    grid-template-rows: 1fr;
+    /*   justify-content: space-evenly; */
+    /*  align-content: flex-start; */
+    position: relative;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
+  }
+
+  .modal img {
+    display: block;
+    width: 95%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid green; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* MOBILE RESPONSIVENESS MEDIUM DEVICE FINISH */
+
+/* MEDIA QUERIES LARGE DEVICE  */
+/* PHYSIO EXERCISES MOBILE RESPONSIVENESS LARGE DEVICE LANDSCAPE START */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
   .physio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -837,155 +2151,6 @@ body {
     width: 90%;
   }
 }
-/* PHYSIO EXERCISES MOBILE RESPONSIVENESS MEDIUM DEVICE LANDSCAPE FINISH */
-
-/* EXERCISE GRID: AUTO COLUMNS */
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-  .exercise-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-auto-columns: auto; */
-    /*     padding: 20px; */
-    margin: auto;
-    row-gap: 10px;
-    justify-content: space-between;
-    /*     border: 5px solid yellow; */
-  }
-
-  .exercise-box {
-    display: block;
-    background-color: white;
-    margin: 25px;
-    height: 410px;
-    padding-bottom: 10px;
-    /*         border: 10px solid purple; */
-  }
-
-  .exercise-box img {
-    display: block;
-    margin: auto;
-    /*     border: 2px solid orange; */
-  }
-
-  .exercise-name {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    color: #5c81a1;
-  }
-
-  .time {
-    font-size: 20px;
-    color: #808080;
-    text-align: center;
-  }
-
-  .sneak-peek {
-    display: none;
-  }
-
-  /*  PREVIEW FOR MOBILE DEVICE START */
-
-  #clickPreviewOne {
-    display: none;
-  }
-
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    margin: 10px;
-  }
-
-  .mobile-device-image img {
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cecece;
-  }
-
-  button {
-    color: #808080;
-    background-color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    border: none;
-  }
-}
-
-/*  PREVIEW FOR MOBILE DEVICE END */
-
-/* MOBILE RESPONSIVENESS MEDIUM DEVICE FINISH */
-
-/* MEDIA QUERIES LARGE DEVICE  */
-/* PHYSIO EXERCISES MOBILE RESPONSIVENESS LARGE DEVICE LANDSCAPE START */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .physio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: auto;
-    background-color: white;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    margin: auto;
-    row-gap: 10px;
-    /*     justify-content: space-between; */
-/*     border: 5px solid yellow; */
-  }
-
-  .physio-exercise-name {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #5c81a1;
-  }
-
-  video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    /*                 border: 5px solid red; */
-    width: 90%;
-  }
-}
 /* PHYSIO EXERCISES MOBILE RESPONSIVENESS LARGE DEVICE FINISH */
 
 /* EXERCISE GRID: AUTO COLUMNS */
@@ -993,20 +2158,25 @@ body {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .exercise-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
+    margin-left: 15px;
     row-gap: 10px;
-    justify-content: space-evenly;
-    /*     border: 5px solid yellow; */
+    justify-content: space-between;
+/*     border: 5px solid yellow; */
   }
 
   .exercise-box {
-    display: block;
+    /*         display: block; */
+    display: grid;
     background-color: white;
-    margin: 25px;
-    height: 420px;
-    padding-bottom: 10px;
-    /*         border: 10px solid purple; */
+    width: 85%;
+    height: 400px;
+    /*     padding-bottom: 15px; */
+    padding: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    /*                 border: 10px solid pink; */
   }
 
   .exercise-box img {
@@ -1016,7 +2186,7 @@ body {
   }
 
   .exercise-name {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     color: #5c81a1;
@@ -1032,78 +2202,173 @@ body {
     display: none;
   }
 
-  .click-to-preview {
-    display: none;
-  }
-
-  /*  PREVIEW FOR MOBILE DEVICE START */
-
-  #clickPreviewOne {
-    display: none;
-  }
-
-  #clickPreviewTwo {
-    display: none;
-  }
-
-  #clickPreviewThree {
-    display: none;
-  }
-
-  #clickPreviewFour {
-    display: none;
-  }
-
-  #clickPreviewFive {
-    display: none;
-  }
-
-  #clickPreviewSix {
-    display: none;
-  }
-
-  #clickPreviewSeven {
-    display: none;
-  }
-
-  #clickPreviewEight {
-    display: none;
-  }
-
-  .click-to-preview {
-    align-items: center;
-    justify-content: center;
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default 
+     
     background-color: white;
-    font-size: 30px;
-    color: #808080;
-    /*     border: 5px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    margin: 10px;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 10;
+    width: max;
+    height: 230px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #5c81a1;
+    /* Enable scroll if needed */
+    /*   overflow: auto;  */
+    /*                          border: 5px solid purple; */
   }
 
-  .mobile-device-image img {
+  /* Modal Content/Box */
+  .modal-content {
+    display: grid;
+    /*      display: flex; */
+    /*      flex-direction: column; */
+    grid-template-rows: 1fr;
+    /*   justify-content: space-evenly; */
+    /*  align-content: flex-start; */
     position: relative;
-    object-fit: contain;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cecece;
+    background-color: white;
+    /* Could be more or less, depending on screen size */
+    margin: 5px;
+    /* Could be more or less, depending on screen size */
+    width: max;
+    /*     border: 2px dotted; */
+    border-color: #5c81a1;
   }
 
-  button {
-    color: #808080;
-    background-color: white;
-    padding: 15px 32px;
-    text-align: center;
+  .modal img {
+    display: block;
+    width: 75%;
+    /*     padding-bottom: 2px; */
+    object-fit: contain;
+    /*                              border: 5px solid green; */
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-one:hover,
+  .close-one:focus {
+    color: black;
     text-decoration: none;
-    font-size: 20px;
-    border: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-two:hover,
+  .close-two:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-three:hover,
+  .close-three:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-four:hover,
+  .close-four:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-five {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-five:hover,
+  .close-five:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-six {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-six:hover,
+  .close-six:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-seven {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-seven:hover,
+  .close-seven:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .close-eight {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .close-eight:hover,
+  .close-eight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
-
-/*  PREVIEW FOR MOBILE DEVICE END */
-
 /* MOBILE RESPONSIVENESS LARGE DEVICE FINISH */
 
 /* MEDIA QUERIES EXTRA LARGE DEVICE  */
@@ -1211,13 +2476,12 @@ body {
     background: white;
   }
 
-  .click-to-preview {
+  button {
     display: none;
   }
 }
 
 /* MOBILE RESPONSIVENESS EXTRA LARGE DEVICE FINISH */
-
 /* _________________ DANCE _________________ */
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
@@ -1347,7 +2611,7 @@ body {
     color: #483d8b;
     padding-bottom: 20px;
     row-gap: 10px;
-    /*     border: 2px solid red; */
+/*         border: 2px solid red; */
   }
 
   .no-bullets {
