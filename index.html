@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <meta charset="UTF-8">
@@ -18,12 +17,12 @@
   <link rel="stylesheet" href="./style.css" />
   <!-- TRY JS FILE HERE BASED ON STACK OVERFLOW https://stackoverflow.com/questions/68424003/modal-box-opens-on-codepen-but-not-on-localhost -->
   <!-- INCLUDE defer SO DIRECT BROWSER THAT THE SCRIPT IS MEANT TO BE EXECUTED AFTER THE DOCUMENT HAS BEEN PARSED-->
-  <!--   <script src="./main.js" defer></script> -->
+  <script src="./main.js" defer></script>
 
 </head>
 
 <!--MAIN.JS FILE LINK HERE -->
-<!-- <script src="./main.js"></script> -->
+<script src="./main.js"></script>
 
 <body>
 
@@ -40,14 +39,15 @@
       And even some grooving,<br>
       And you'll soon be back for more!</h3>
   </div>
-<!--   <br></br> -->
+  <!--   <br></br> -->
 
-   <div class="exercise-dance-name">Physio exercises</div>
+  <div class="exercise-dance-name">Physio exercises</div>
   <div class="physio">
-        <section class="physio-exercise">
+    <section class="physio-exercise">
       <div class="physio-name-and-exercise">
         <p class="physio-exercise-name">Sit and stand</p>
-        <video id="video" width="240" height="360" controls>
+        <!--                 <video width="240" height="360" controls> -->
+        <video width="100%" height="auto" controls>
           <!-- MP4 source -->
           <source src="https://i.imgur.com/ymyzUFD.mp4" type="video/mp4" target="_blank">
         </video>
@@ -57,7 +57,8 @@
     <section class="physio-exercise">
       <div class="physio-name-and-exercise">
         <p class="physio-exercise-name">Marching</p>
-        <video width="240" height="360" controls>
+        <!--                 <video width="240" height="360" controls> -->
+        <video width="100%" height="auto" controls>
           <!-- MP4 source -->
           <source src="https://i.imgur.com/x9M7aEE.mp4" type="video/mp4" target="_blank">
         </video>
@@ -67,7 +68,8 @@
     <section class="physio-exercise">
       <div class="physio-name-and-exercise">
         <p class="physio-exercise-name">Sideways leg lifts</p>
-        <video width="240" height="360" controls>
+        <!--                 <video width="240" height="360" controls> -->
+        <video width="100%" height="auto" controls>
           <!-- MP4 source -->
           <source src="https://i.imgur.com/wyps3yR.mp4" type="video/mp4" target="_blank">
         </video>
@@ -76,9 +78,9 @@
 
   </div>
 
+  <div class="exercise-dance-name">Gentle exercises</div>
   <div class="exercise-grid">
-    <!--       <div class="contain-all"> -->
-    <!--     ----------------- -->
+
     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">Everyday balance</p>
@@ -86,7 +88,6 @@
         <a href="https://youtu.be/uth_9K3EmDI" target="_blank">
           <img src="https://i.imgur.com/8pWTPpP.jpeg" alt="Anytime tai chi" width="110" height="160">
         </a>
-        <!--       </section> -->
 
         <section class="sneak-peek">
           <a href="https://youtu.be/ZtTLoHaaAZI">Preview</a>
@@ -94,11 +95,30 @@
             <div class="hide"> <img src="https://i.imgur.com/mgjnkAD.jpeg" alt="Anytime tai chi" width="300" height="160"></div>
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonOne">Preview</button>
+        <!-- The Modal -->
+        <div id="modalOne" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <!--             <section class="float-layout"> -->
+            <span class="close-one">&times;</span>
+            <div class="mobile-device-image">
+              <!--                 <img id="mobileDevicePreviewImage" src="https://i.imgur.com/mgjnkAD.jpeg" alt="Standing exercises" width="200" height="max"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/mgjnkAD.jpeg" alt="Standing exercises">
+            </div>
+            <!--             </section> -->
+          </div>
+        </div>
       </section>
     </div>
-    
+    <!--     ----------------- -->
+
+    <!-- MODAL PREVIEW FOR MOBILE DEVICES END -->
+
     <!--     PREVIEW FOR MOBILE DEVICES -->
-<!--     <section class="click-to-preview">
+    <!--     <section class="click-to-preview">
             <button id="buttonOne" onclick="myFunctionOne()">Preview</p></button>
       <div id="clickPreviewOne">
         <div class="mobile-device-image">
@@ -108,7 +128,6 @@
     </section> -->
     <!--     END PREVIEW FOR MOBILE DEVICES -->
     <!--     ----------------- -->
-
     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">Balance tai chi</p>
@@ -120,17 +139,27 @@
           </div>
         </a>
 
-        <!--       </section> -->
-
         <section class="sneak-peek">
           <a href="https://youtu.be/ZtTLoHaaAZI">Preview</a>
           <div class="hover-box-one">
             <!--           <div class="hide"><iframe src="https://i.ytimg.com/an_webp/tB3WoREkd98/mqdefault_6s.webp?du=3000&sqp=CKHfj8QG&rs=AOn4CLANQmJtPR-jL2HwA4lseeLP2FBx-A" width="320" height="180"></iframe></div> -->
-
             <div class="hide"> <img src="https://i.imgur.com/aZR1NxP.jpeg" alt="Anytime tai chi" width="300" height="160"></div>
-
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonTwo">Preview</button>
+        <!-- The Modal -->
+        <div id="modalTwo" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-two">&times;</span>
+            <div class="mobile-device-image">
+              <!--               <img src="https://i.imgur.com/aZR1NxP.jpeg" alt="Balance tai chi" width="200" height="auto"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/aZR1NxP.jpeg" alt="Balance tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
@@ -140,23 +169,35 @@
         <p class="time">10 minutes</p>
         <a href="https://youtu.be/qMuh_MfHNwI" target="_blank">
           <div class="image">
-            <img src="https://i.imgur.com/OFOniGl.jpeg" alt="Anytime tai chi" width="80" height="160">
+            <img src="https://i.imgur.com/OFOniGl.jpeg" alt="Strength tai chi" width="80" height="160">
           </div>
         </a>
-        <!--       </section> -->
 
         <section class="sneak-peek">
           <a href="https://youtu.be/ZtTLoHaaAZI">Preview</a>
           <div class="hover-box-one">
             <!--           <div class="hide"><iframe src="https://i.ytimg.com/an_webp/tB3WoREkd98/mqdefault_6s.webp?du=3000&sqp=CKHfj8QG&rs=AOn4CLANQmJtPR-jL2HwA4lseeLP2FBx-A" width="320" height="180"></iframe></div> -->
-
             <div class="hide"> <img src="https://i.imgur.com/ymehE0k.jpeg" alt="Anytime tai chi" width="300" height="160"></div>
-
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonThree">Preview</button>
+        <!-- The Modal -->
+        <div id="modalThree" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-three">&times;</span>
+            <div class="mobile-device-image">
+              <!--             <img src="https://i.imgur.com/ymehE0k.jpeg" alt="Strength tai chi" width="200" height="auto"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/ymehE0k.jpeg" alt="Strength tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
+
     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">Mobility tai chi</p>
@@ -166,17 +207,27 @@
             <img src="https://i.imgur.com/pe1NgPz.jpeg" alt="Anytime tai chi" width="120" height="160">
           </div>
         </a>
-        <!--       </section> -->
 
         <section class="sneak-peek">
           <a href="https://youtu.be/ZtTLoHaaAZI">Preview</a>
           <div class="hover-box-one">
-            <!--           <div class="hide"><iframe src="https://i.ytimg.com/an_webp/tB3WoREkd98/mqdefault_6s.webp?du=3000&sqp=CKHfj8QG&rs=AOn4CLANQmJtPR-jL2HwA4lseeLP2FBx-A" width="320" height="180"></iframe></div> -->
-
             <div class="hide"> <img src="https://i.imgur.com/CFqv3Cp.jpeg" alt="Anytime tai chi" width="300" height="170"></div>
-
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonFour">Preview</button>
+        <!-- The Modal -->
+        <div id="modalFour" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-four">&times;</span>
+            <div class="mobile-device-image">
+              <!--                <img class="mobile-device-preview-image" src="https://i.imgur.com/CFqv3Cp.jpeg" alt="Strength tai chi" width="200" height="auto"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/CFqv3Cp.jpeg" alt="Strength tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
@@ -201,9 +252,24 @@
 
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonFive">Preview</button>
+        <!-- The Modal -->
+        <div id="modalFive" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-five">&times;</span>
+            <div class="mobile-device-image">
+              <!--             <img src="https://i.imgur.com/8lgohwZ.jpeg" alt="Strength tai chi" width="200" height="auto"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/8lgohwZ.jpeg" alt="Strength tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
+
     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">Seated tai chi </p>
@@ -226,9 +292,24 @@
 
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonSix">Preview</button>
+        <!-- The Modal -->
+        <div id="modalSix" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-six">&times;</span>
+            <div class="mobile-device-image">
+              <!--             <img src="https://i.imgur.com/UCu7ThY.jpeg" alt="Strength tai chi" width="300" height="170"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/UCu7ThY.jpeg" alt="Strength tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
+
     <!--         with Alice McHugh -->
     <div class="exercise-tile">
       <section class="exercise-box">
@@ -249,10 +330,24 @@
 
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonSeven">Preview</button>
+        <!-- The Modal -->
+        <div id="modalSeven" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-seven">&times;</span>
+            <div class="mobile-device-image">
+              <!--             <img src="https://i.imgur.com/zdgyUt9.jpeg" alt="Strength tai chi" width="300" height="170"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/zdgyUt9.jpeg" alt="Strength tai chi">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--     ----------------- -->
-    <!--         with Alice McHugh -->
+
     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">For stiff hands</p>
@@ -272,10 +367,26 @@
 
           </div>
         </section>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="buttonEight">Preview</button>
+        <!-- The Modal -->
+        <div id="modalEight" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-eight">&times;</span>
+            <div class="mobile-device-image">
+              <!--             <img src="https://i.imgur.com/snQ0N4F.jpeg" alt="Stiff hands" width="300" height="170"> -->
+              <img class="mobile-device-preview-image" src="https://i.imgur.com/snQ0N4F.jpeg" alt="Stiff hands">
+            </div>
+          </div>
+        </div>
       </section>
     </div>
-    <!--     ----------------- -->
-    <!--     <div class="exercise-tile">
+  </div>
+  <!--     ----------------- -->
+  <!--     ----------------- -->
+  <!--     <div class="exercise-tile">
       <section class="exercise-box">
         <p class="exercise-name">For stiff hands</p>
         <p class="time">5 minutes</p>
@@ -291,16 +402,16 @@
       <section class="sneak-peek">
         <a href="https://youtu.be/ZtTLoHaaAZI">Preview</a>
         <div class="hover-box-one"> -->
-    <!--           <div class="hide"><iframe src="https://i.ytimg.com/an_webp/tB3WoREkd98/mqdefault_6s.webp?du=3000&sqp=CKHfj8QG&rs=AOn4CLANQmJtPR-jL2HwA4lseeLP2FBx-A" width="320" height="180"></iframe></div> -->
+  <!--           <div class="hide"><iframe src="https://i.ytimg.com/an_webp/tB3WoREkd98/mqdefault_6s.webp?du=3000&sqp=CKHfj8QG&rs=AOn4CLANQmJtPR-jL2HwA4lseeLP2FBx-A" width="320" height="180"></iframe></div> -->
 
-    <!--           <div class="hide"> <img src="https://i.imgur.com/snQ0N4F.jpeg" alt="Anytime tai chi" width="300" height="160"></div>
+  <!--           <div class="hide"> <img src="https://i.imgur.com/snQ0N4F.jpeg" alt="Anytime tai chi" width="300" height="160"></div>
 
         </div>
       </section>
     </div> -->
-    <!--     ----------------- -->
+  <!--     ----------------- -->
 
-  </div>
+  <!--   </div> -->
 
   <div class="exercise-dance-name">Do it to music!</div><br>
   <section class="exercise-dance-container">
@@ -311,8 +422,9 @@
         <li><a href="https://danceforparkinsons.org/on_demand/broadway-combo/" target="_blank">Broadway Combo</a></li><br>
         <li><a href="https://danceforparkinsons.org/on_demand/walking-with-imagery/" target="_blank">Walking with Imagery</a></li><br>
       </ul>
-      <!--     </div> -->
+          </div>
       <!--     ------------- -->
+          <div class="exercise-dance">
       <h2>Getting warmer...</h2>
       <ul class="no-bullets">
         <li><a href="https://youtu.be/fvxyKpyQtOA" target="_blank">Irish Dancing in a Chair</a></li><br>
@@ -323,7 +435,7 @@
 
     </div>
     <!--     ------------- -->
-    <div class="exercise-dance">
+    <!--     <div class="exercise-dance">
       <h2>Christmas spirit!</h2>
       <ul class="no-bullets">
         <li><a href="https://youtu.be/HdZAD6hgemU" target="_blank">Jingle Bells</a>
@@ -334,9 +446,8 @@
         </li><br>
         <li><a href="https://youtu.be/tN_BPF0YYnw" target="_blank">Feliz Navidad</a>
         </li><br>
-
-      </ul>
-    </div>
+      </ul> -->
+<!--     </div> -->
 
     <div class="exercise-dance">
       <h2>Step it up!</h2>
@@ -352,7 +463,6 @@
     </div>
 
   </section>
-
 </body>
 
 <footer class="footer">
